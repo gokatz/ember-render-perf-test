@@ -1,5 +1,15 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<button {{action "toggle"}}>
+  {{if canShow "Hide" "Show"}}
+</button>
+
+{{#if canShow}}
+  {{#each data as |datum index|}}
+    <div class="item">
+      {{index}}
+    </div>
+    <div class="issue-desc">
+      {{datum.text}}
+    </div>
+  {{/each}}
+{{/if}}

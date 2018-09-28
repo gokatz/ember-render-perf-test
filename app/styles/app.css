@@ -1,0 +1,12 @@
+.issue-desc {
+  height: 200px;
+  border: 1px solid #333;
+  background: #eee;
+  overflow: auto;
+  word-break: break-all;
+  padding: 10px;
+}
+
+.item {
+  padding: 10px;
+}
